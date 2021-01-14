@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "507404879775",
+    "project_id": "my-note-8b2a8",
+    "storage_bucket": "my-note-8b2a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507404879775:android:0848069d9f92ad59d0dfaa",
+        "android_client_info": {
+          "package_name": "com.flutterex.my_note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507404879775-51qukt5mt8hj8ojjlck9nvte0lee67de.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpAjz4_3HLPL3In7bdAt2yAiMG8t9glJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507404879775-51qukt5mt8hj8ojjlck9nvte0lee67de.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
