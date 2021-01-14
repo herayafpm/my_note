@@ -9,6 +9,7 @@ import 'package:my_note/home_page.dart';
 import 'package:my_note/login_page.dart';
 import 'package:my_note/note_detail_page.dart';
 import 'package:my_note/note_form_page.dart';
+import 'package:my_note/register_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -48,6 +49,7 @@ class App extends StatelessWidget {
               getPages: [
                 // Auth
                 GetPage(name: "/auth/login", page: () => LoginPage()),
+                GetPage(name: "/auth/register", page: () => RegisterPage()),
                 GetPage(
                     name: "/home", page: () => HomePage(), binding: HomeBind()),
                 GetPage(name: "/note/detail", page: () => NoteDetailPage()),

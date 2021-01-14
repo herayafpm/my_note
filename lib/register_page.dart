@@ -2,19 +2,19 @@ import 'package:division/division.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_note/auth_template.dart';
-import 'package:my_note/controller/login_controller.dart';
+import 'package:my_note/controller/register_controller.dart';
 import 'package:my_note/my_button.dart';
 import 'package:my_note/my_flat_button.dart';
 import 'package:my_note/my_input.dart';
 
-class LoginPage extends StatelessWidget {
-  final controller = Get.put(LoginController());
+class RegisterPage extends StatelessWidget {
+  final controller = Get.put(RegisterController());
 
   @override
   Widget build(BuildContext context) {
     GlobalKey<FormState> key = GlobalKey<FormState>();
     return AuthTemplate(
-        title: "Login Aplikasi",
+        title: "Registrasi",
         body: Form(
           key: key,
           child: Column(
@@ -64,21 +64,21 @@ class LoginPage extends StatelessWidget {
               ),
               Obx(() => MyButton(
                   isLoading: controller.isLoading.value,
-                  title: "Login",
+                  title: "Register",
                   onTap: (controller.isLoading.value)
                       ? () {}
                       : () {
                           if (key.currentState.validate()) {
-                            controller.login();
+                            controller.register();
                           }
                         })),
               SizedBox(
                 height: Get.height * 0.02,
               ),
               MyFlatButton(
-                  title: "Register",
+                  title: "Login",
                   onTap: () {
-                    Get.offAllNamed("/auth/register");
+                    Get.offAllNamed("/auth/login");
                   }),
             ],
           ),
